@@ -1,16 +1,18 @@
 import { Routes, Route, Link, Navigate } from 'react-router-dom'
-import AdminDashboard from './page/Admin/Dashboard'
+import AdminDashboard from './page/Admin/Facility Dashboard'
 import FacilityManagement from './page/Admin/FacilityManagement'
 import './App.css'
 
 function App() {
   return (
+    <>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
       <Route path="/admin/facilities" element={<FacilityManagement />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    </>
   )
 }
 
